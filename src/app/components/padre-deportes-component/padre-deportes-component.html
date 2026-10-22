@@ -1,0 +1,8 @@
+<h1>Padre deportes</h1>
+<ul>
+    @for (deporte of deportes; track deporte){
+        <li>
+            <app-deporte-component [sport]="deporte"></app-deporte-component>
+        </li>
+    }
+</ul>
