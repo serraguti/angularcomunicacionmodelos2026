@@ -1,0 +1,11 @@
+<h1 style="color:blue">
+    {{car.marca}} {{car.modelo}}
+</h1>
+<h2 [ngClass]="{
+    rojo: car.velocidad == 0,
+    verde: car.velocidad > 0
+}">
+    Velocidad actual: {{car.velocidad}} km/h
+</h2>
+<button (click)="acelerarCoche()">Pide pista!!! acelera</button>
+<button (click)="frenarCoche()">Frenar coche</button>

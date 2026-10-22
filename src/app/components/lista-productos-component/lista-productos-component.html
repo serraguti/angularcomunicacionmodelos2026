@@ -1,0 +1,11 @@
+<h1>Lista de modelos productos</h1>
+<p>{{producto.nombre}}</p>
+<p>Precio: {{producto.precio}}</p>
+<img src="{{producto.imagen}}"
+    style="width: 150px; height: 150px;"/>
+@for (prod of listaproductos; track prod){
+    <p>{{prod.nombre}}</p>
+    <p>Precio: {{prod.precio}}</p>
+    <img src="{{prod.imagen}}"
+        style="width: 150px; height: 150px;"/>    
+}
